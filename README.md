@@ -17,11 +17,18 @@ Primero, clona este repositorio en tu máquina local:
 ```bash
 git clone https://github.com/grs89/ARQ-SOFTWARE2024
 cd file-sharing-api
-####
 
 
-Subir un archivo:
+### Subir un archivo
 ```bash
 curl -X POST http://localhost:8080/upload \
   -H "Authorization: Bearer <your_jwt_token>" \
   -F "file=@/path/to/your/file.txt"
+
+### Descarhar un archivo
+curl -X GET http://localhost:8080/download/<fileId> \
+  -H "Authorization: Bearer <your_jwt_token>
+
+### Eliminar un archivo
+curl -X DELETE http://localhost:8080/files/<fileId> \
+  -H "Authorization: Bearer <your_jwt_token>"
