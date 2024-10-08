@@ -8,6 +8,14 @@ Esta es una API REST desarrollada en Go que permite a los usuarios cargar, desca
 - Tener configurada la API Key de Gofile (si utilizas cuentas de usuario).
 - **Git** instalado para clonar el proyecto.
 
+-  Iniciar proyecto GO
+go mod init file-sharing-api
+
+- Instalar dependencias
+go mod tidy
+
+
+
 ## Instalación
 
 ### 1. Clonar el repositorio
