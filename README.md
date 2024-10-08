@@ -18,3 +18,10 @@ Primero, clona este repositorio en tu máquina local:
 git clone https://github.com/grs89/ARQ-SOFTWARE2024
 cd file-sharing-api
 ####
+
+
+Subir un archivo:
+```bash
+curl -X POST http://localhost:8080/upload \
+  -H "Authorization: Bearer <your_jwt_token>" \
+  -F "file=@/path/to/your/file.txt"
